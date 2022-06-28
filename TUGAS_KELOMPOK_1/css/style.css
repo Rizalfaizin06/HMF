@@ -28,13 +28,11 @@ header div h1 {
     object-position: 0 -90px;
 }
 
-
-
 ul {
     background-color: #000;
     width: 100%;
     padding: 0px;
-    margin: 0px;
+    margin: -4px 0 0 0;
     font: bolder 14px Arial, Verdana;
     list-style-type: none;
     overflow: hidden;
