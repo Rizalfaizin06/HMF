@@ -23,9 +23,9 @@ header div h1 {
 
 .headerImg {
     width: 100%;
-    max-height: 200px;
+    max-height: 300px;
     object-fit: cover;
-    object-position: 0 -90px;
+    object-position: 0 30%;
 }
 
 ul {
