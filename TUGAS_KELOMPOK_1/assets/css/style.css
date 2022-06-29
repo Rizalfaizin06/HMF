@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 
+header {
+    display: inline;
+}
 
-header div {
+.banner {
     position: relative;
 
 }
 
-header div h1 {
+.banner h1 {
     position: absolute;
     text-align: center;
     color: #fff;
@@ -24,6 +27,12 @@ header div h1 {
     max-height: 300px;
     object-fit: cover;
     object-position: 0 30%;
+}
+
+nav {
+    position: sticky;
+
+    top: 0;
 }
 
 ul {
@@ -41,36 +50,36 @@ ul {
     width: 100%;
 }
 
-ul li {
+ul a {
     list-style-type: none;
     text-align: center;
     padding: 15px;
     width: 25%;
+    text-decoration: none;
 }
 
-ul li a {
+ul a li {
 
     flex: 1;
-    text-decoration: none;
     list-style-type: none;
     text-align: center;
     border: 0px solid #000;
     color: #fff;
 }
 
-ul li:hover {
-    border: 0px solid #000;
+ul a:hover {
+    border: 0px soad #000;
     color: #fff;
     background-color: #585858;
     border-radius: 10px;
 }
 
-ul li:first-child:hover {
+ul a:first-child:hover {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
 }
 
-ul li:last-child:hover {
+ul a:last-child:hover {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
 }
@@ -153,4 +162,11 @@ main p {
     float: right;
     margin: 0 0 10px 20px;
     width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        flex-direction: column-reverse;
+
+    }
 }
